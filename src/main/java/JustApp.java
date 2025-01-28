@@ -1,3 +1,4 @@
+import ie.atu.week1sem2.Dessert;
 import ie.atu.week1sem2.Food;
 import ie.atu.week1sem2.Fries;
 import ie.atu.week1sem2.Pizza;
@@ -13,14 +14,16 @@ public class JustApp {
         System.out.println("You ordered...");
 
         //Add some items burgers, pizzas, fries, salad...
-        Burger cheeseBurger = new Burger("CheeseBurgeer", 1.99, "Tasty");
-        Pizza pepperoni = new Pizza("Pizza", 9.99, "Tasty");
-        Fries curry = new Fries("Curly", 4.99, "Good");
+        Burger cheeseBurger = new Burger("Cheese Burgeer", 1.99, "Beef patty, Cheese, Mayo");
+        Pizza pepperoni = new Pizza("Pizza", 9.99, "Pepperoni, Cheese, Ketchup");
+        Fries curry = new Fries("Curly", 4.99, "Ready made - Served Hot");
+        Dessert icecream = new Dessert("Strawberry Icecream", 1.99, "Medium - 2 scoops");
 
         //Add all the orders to a collection
         items.add(cheeseBurger);
         items.add(pepperoni);
         items.add(curry);
+        items.add(icecream);
 
         //Display all the orders
         for(Food item : items)

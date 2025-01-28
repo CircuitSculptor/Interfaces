@@ -11,7 +11,6 @@ public class Dessert implements Food {
         this.price = price;
         this.description = description;
     }
-
     @Override
     public String getName() {
         return name;

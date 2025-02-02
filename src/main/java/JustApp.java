@@ -14,10 +14,10 @@ public class JustApp {
         System.out.println("You ordered...");
 
         //Add some items burgers, pizzas, fries, salad...
-        Burger cheeseBurger = new Burger("Cheese Burgeer", 1.99, "Beef patty, Cheese, Mayo");
+        Burger cheeseBurger = new Burger("Cheese Burger", 1.99, "Beef patty, Cheese, Mayo");
         Pizza pepperoni = new Pizza("Pizza", 9.99, "Pepperoni, Cheese, Ketchup");
         Fries curry = new Fries("Curly", 4.99, "Ready made - Served Hot");
-        Dessert icecream = new Dessert("Strawberry Icecream", 1.99, "Medium - 2 scoops");
+        Dessert icecream = new Dessert("Strawberry Ice-cream", 1.99, "Medium - 2 scoops");
 
         //Add all the orders to a collection
         items.add(cheeseBurger);
@@ -28,9 +28,9 @@ public class JustApp {
         //Display all the orders
         for(Food item : items)
         {
-            System.out.println(item.getName());
-            System.out.println(item.getPrice());
-            System.out.println(item.getDescription());
+            System.out.println("Name:       " + item.getName());
+            System.out.println("Price:      " + item.getPrice());
+            System.out.println("Description:" + item.getDescription());
 
         }
         // Find the total cost of the whole order
